@@ -18,9 +18,6 @@ Deep learning model for detecting and classifying particles in CryoET (Cryo-elec
 ### Training
 
 ```python
-from models import ImprovedViT3D
-from training import train_model
-
 # Initialize model
 model = ImprovedViT3D(
     patch_size=(8, 16, 16),
@@ -42,8 +39,6 @@ train_model(
 ### Inference
 
 ```python
-from inference import predict_ensemble, generate_submission
-
 predictions = predict_ensemble(
     models=models,
     zarr_path=zarr_path,
@@ -54,7 +49,7 @@ predictions = predict_ensemble(
 
 ## Model Architecture
 
-- Improved Vision Transformer 3D with axial attention
+- Vision Transformer 3D with axial attention
 - Feature Pyramid Network for multi-scale processing
 - Residual blocks with squeeze-excitation
 - Multiple prediction heads:
