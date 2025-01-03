@@ -12,11 +12,6 @@ Deep learning model for detecting and classifying particles in CryoET (Cryo-elec
 - Test-time augmentation
 - Ensemble predictions
 
-## Installation
-
-```bash
-pip install -r requirements.txt
-```
 
 ## Usage
 
